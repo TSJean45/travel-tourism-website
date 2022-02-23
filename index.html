@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nomadic Traveller - Travelling Around Malaysia</title>
+        <link rel="icon" href="Nomadic Traveller/Nomadic Traveller (Solid).png" type="image/x-icon">
+        <style>
+            margin
+            {
+                margin: 0;
+                padding: 0;
+            }
+
+            body
+            {
+                margin: 0;
+                font-family: Lucida Handwriting, cursive;
+                font-size: 17px;
+                color:#191970;
+                line-height: 1.6;
+                padding: 0;
+            }
+
+            #cover
+            {
+                animation-name: cover;
+                animation-duration: 20s;
+                animation-iteration-count: infinite;
+                background:url("image/cover2.jfif");
+            }
+
+            @keyframes cover
+            {
+                0% { background:url("image/cover2.jfif");
+                    background-size: cover;
+                    background-position: center;
+                    height: 100vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    padding: 0 20px;}
+
+                50% { background:url("image/cover.jfif");
+                    background-size: cover;
+                    color: #E6E6FA;
+                    background-position: center;
+                    height: 100vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    padding: 0 20px;}
+
+                100% { background:url("image/cover2.jfif");
+                    background-size: cover;
+                    background-position: center;
+                    height: 100vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    padding: 0 20px;}
+                
+            }
+
+            #cover h1
+            {
+                font-size: 50px;
+                line-height: 1.5;
+            }
+
+            #cover .Click
+            {
+                font-size: 18px;
+                text-decoration: none;
+                color:#778899;
+                border: #778899 1px solid;
+                padding: 10px 20px;
+                border-radius: 10px;
+                margin-top: 20px;
+            }
+
+            #cover .Click:hover
+            {
+                background: #E6E6FA;
+                color: #778899;
+            }
+
+            #cover img
+            {
+                width: 80%;
+                height: auto;
+                position: relative;
+                margin: auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="transition transition-1 is-active"></div>
+
+        <header id="cover">
+            <a><img src="image/Nomadic Traveller Icon(WhiteTransparent).png" ></a>
+            <h1>WELCOME TO NOMADIC TRAVELLER</h1>
+            <a href="cover.html" class="Click">Start Your Journey Now</a>
+    </header>
+    </body>
+</html>

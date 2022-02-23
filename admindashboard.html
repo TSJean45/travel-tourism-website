@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href=
+        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link rel="icon" href="image/Nomadic_Traveller_Solid.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/admindashboard.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-logo">
+            <img src="image/Nomadic Traveller(WhiteTransparent).png" alt="logo">
+        </div>
+        <div class="navbar-menu">
+            <ul>
+                <li><a href="admindashboard.html"  class="active"><span class="fas fa-igloo"></span>
+                    <span>Main Dashboard</span></a></li>
+                <li><a href="cmanagement.html"><span class="fas fa-edit"></span>
+                    <span>Content Management</span></a></li>
+                <li><a href="request.html"><span class="fas	fa-comment-dots "></span>
+                    <span>Request</span></a></li>
+                    <li><a href="westm.html"><span class="fas fa-sign-out-alt"></span>
+                        <span>Sign Out</span></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="body-main">
+        <header class="header">
+            <div class="header-title">
+                <h2>
+                    <span class="fas fa-igloo"></span>
+                    Main Dashboard
+                </h2>
+            </div>
+            <div class="header-search">
+                <input type="text" name="location"  class="fontAwesome" required autocomplete="off"  placeholder="Search"></input>
+                <a href="#"><span class="fas fa-search"></span></a>
+            </div>
+            <div class="header-noti">
+                <a href="#"><span class="fas fa-bell"></span></a>
+            </div>
+        </header>
+
+        <div class="body-content">
+            <div class="body-content-1">
+                <div class="profile-container">
+                    <div class="picture">
+                        <img src="image/profile2.jpg" alt="profile-picture">
+                    </div>
+                    <div class="details">
+                        <h1>Tan Szu Jean</h1>
+                        <h2>Administrator</h2>
+                        <p>011-10831460</p>
+                        <p>Kuala Lumpur, Malaysia</p>
+                    </div>
+                </div>
+
+                <div class="count-container">
+                    <div class="count">
+                        <div class="count-icon">
+                            <span class="fas fa-users"></span>
+                        </div>
+
+                        <div class="count-details" id="first">
+                            <h2>5023</h2>
+                            <span>Total Registered Users</span>
+                        </div>
+                    </div>
+
+                    <div class="count">
+                        <div class="count-icon">
+                            <span class="fas fa-eye"></span>
+                        </div>
+
+                        <div class="count-details" id="second">
+                            <h2>50643</h2>
+                            <span>Total Views Today</span>
+                        </div>
+                    </div>
+
+                    <div class="count">
+                        <div class="count-icon">
+                            <span class="fas fa-chart-bar"></span>
+                        </div>
+
+                        <div class="count-details" id="third">
+                            <h2>RM 145.00</h2>
+                            <span>Total AdSense Income Today</span>
+                        </div>
+                    </div>
+
+                    <div class="count">
+                        <div class="count-icon">
+                            <span class="fas fa-hand-point-right"></span>
+                        </div>
+
+                        <div class="count-details" id="fourth">
+                            <h2>24568</h2>
+                            <span>Total Interactions Today</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="body-content-2">
+                <div class="userlist-container">
+                    <div class="userlist">
+                        <div class="userlist-header">
+                            <h2>Registered Users</h2>
+                            <button>Read More <span class="fas fa-angle-double-right"></span></button>
+                        </div>
+
+                        <div class="userlist-body">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td><span class="fas fa-picture-o"></span>Profile Photo</td>
+                                        <td><span class="fas fa-user"></span>Name</td>
+                                        <td><span class="fas fa-envelope-open"></span>Email</td>
+                                        <td><span class="fas fa-male"></span> Gender</td>
+                                        <td><span class="fas fa-address-book"></span>Location</td>
+                                        <td><span class="fas fa-file"></span>Option</td>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td><img src="image/profile1.jpg" alt="profile-picture"></td>
+                                        <td>Nurul Faizyani</td>
+                                        <td>ndhaliwal@yahoo.com</td>
+                                        <td>Female</td>
+                                        <td>Naning, Malacca</td>
+                                        <td><a href="#"><span class="fas fa-archive"></span>View Profile</a></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><img src="image/profile1.jpg" alt="profile-picture"></td>
+                                        <td>K. R.Shanti</td>
+                                        <td>hasrin56@hotmail.com</td>
+                                        <td>Female</td>
+                                        <td>Chuping, Perlis</td>
+                                        <td><a href="#"><span class="fas fa-archive"></span>View Profile</a></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><img src="image/profile1.jpg" alt="profile-picture"></td>
+                                        <td>Ban Pai Kiap</td>
+                                        <td>farhah72@hotmail.com</td>
+                                        <td>Male</td>
+                                        <td>Tambunan, Sabah</td>
+                                        <td><a href="#"><span class="fas fa-archive"></span>View Profile</a></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><img src="image/profile1.jpg" alt="profile-picture"></td>
+                                        <td>Simon Kar Bow Din</td>
+                                        <td>nelson59@rosli.net</td>
+                                        <td>Male</td>
+                                        <td>Bukit Bintang, KL</td>
+                                        <td><a href="#"><span class="fas fa-archive"></span>View Profile</a></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><img src="image/profile1.jpg" alt="profile-picture"></td>
+                                        <td>Kua Ki May</td>
+                                        <td>mazwan.heng@gmail.com</td>
+                                        <td>Female</td>
+                                        <td>Simpang Empat, Perlis</td>
+                                        <td><a href="#"><span class="fas fa-archive"></span>View Profile</a></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><img src="image/profile1.jpg" alt="profile-picture"></td>
+                                        <td>Haji Nik Thaqif</td>
+                                        <td>thamil51@hotmail.com</td>
+                                        <td>Male</td>
+                                        <td>Chuping, Perlis</td>
+                                        <td><a href="#"><span class="fas fa-archive"></span>View Profile</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

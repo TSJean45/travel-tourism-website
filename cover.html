@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nomadic Traveller - Travelling Around Malaysia</title>
+        <link rel="icon" href="Nomadic Traveller/Nomadic Traveller (Solid).png" type="image/x-icon">
+        <style>
+            @font-face{
+            font-family: WhyteBI;
+            src: url(Font/Whyte-BoldItalic.woff);
+        }
+
+        .banner-main{
+            display: flex; 
+            position: absolute;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            top: 0;
+            left: 0;
+        }
+
+        .left,.right{
+            overflow: hidden;
+            display: block;
+            flex: 1;
+            height: 729px;
+        }
+
+        .left img, .right img{
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            transition: all 10s linear;
+            background-size: cover;
+        }
+
+        .left:hover img, .right:hover img{
+            transform: scale(1.5);
+        }
+
+        #logo{
+            width: 100%;
+            justify-content: center;
+            display: flex;
+        }
+
+        #logo img{
+            width: 300px;
+            height: auto;
+            position: relative;
+            top: -95px;
+        }
+
+        .banner-main a{
+            padding: 15px 25px;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            text-transform: uppercase;
+            font-family: "WhyteBI";
+            display: inline-block;
+            background:linear-gradient(to bottom, #54a8b0 5%, #408c99 100%);
+            background-color:#54a8b0;
+            border-radius:32px;
+            box-shadow: 3px 3px white;
+            cursor: pointer;
+            border:2px solid #698986;
+            font-size:20px;
+            position: relative;
+            bottom: 100px;
+        }
+
+        .left a:hover, .right a:hover{
+            background: #e9e9e9;;
+            color:black;
+            box-shadow: 3px 3px #54a8b0;
+        }
+
+        @media only screen and (max-width:1000px){
+
+            .banner-main{
+                flex-direction:column;
+            }
+
+            .banner-main a{
+                font-size:15px;
+            }
+
+            #logo{
+                justify-content: flex-start;
+                flex-direction: row;
+            }
+
+            #logo img{
+                width: 200px;
+                top: -70px;
+                left: -30px;
+            }
+        }
+        </style>
+    </head>
+
+    <body>
+        <div class="transition transition-1 is-active"></div>
+        <section class="banner-image-home">
+            <div class="banner-main">
+                <div class="left">
+                    <img src="image/westM-cover.jpg">
+                    <a href="westm.html" class="btn1">Discover West Malaysia</a>
+                </div>
+
+                <div class="right">
+                    <img src="image/eastM-cover.jpg">
+                    <a href="eastm.html" class="btn2">Discover East Malaysia</a>
+                </div>
+            </div>
+
+            <div id="logo">
+                <img src="Nomadic Traveller/NT Solid Shape.png">
+            </div>
+
+        </section>
+    </body>
+</html>

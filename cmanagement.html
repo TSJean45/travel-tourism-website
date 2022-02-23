@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Content Management</title>
+    <link rel="stylesheet" href=
+        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link rel="icon" href="image/Nomadic_Traveller_Solid.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/cmanagement.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-logo">
+            <img src="image/Nomadic Traveller(WhiteTransparent).png" alt="logo">
+        </div>
+        <div class="navbar-menu">
+            <ul>
+                <li><a href="admindashboard.html"><span class="fas fa-igloo"></span>
+                    <span>Main Dashboard</span></a></li>
+                <li><a href="cmanagement.html" class="active"><span class="fas fa-edit"></span>
+                    <span>Content Management</span></a></li>
+                <li><a href="request.html"><span class="fas	fa-comment-dots "></span>
+                    <span>Request</span></a></li>
+                    <li><a href="westm.html"><span class="fas fa-sign-out-alt"></span>
+                        <span>Sign Out</span></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="body-main">
+        <header class="header">
+            <div class="header-title">
+                <h2>
+                    <span class="fas fa-edit"></span>
+                    Content Management
+                </h2>
+            </div>
+            <div class="header-search">
+                <input type="text" name="location"  class="fontAwesome" required autocomplete="off"  placeholder="Search"></input>
+                <a href="#"><span class="fas fa-search"></span></a>
+            </div>
+            <div class="header-noti">
+                <a href="#"><span class="fas fa-bell"></span></a>
+            </div>
+        </header>
+
+        <div class="body-content">
+            <div class="body-content-1">
+                <div class="count-container">
+                    <div class="count">
+                        <div class="count-icon">
+                            <span class="fas fa-hotel"></span>
+                        </div>
+
+                        <div class="count-details" id="first">
+                            <h2>12</h2>
+                            <span>Total Hotels</span>
+                        </div>
+                    </div>
+
+                    <div class="count">
+                        <div class="count-icon">
+                            <span class="fas fa-tree"></span>
+                        </div>
+
+                        <div class="count-details" id="second">
+                            <h2>14</h2>
+                            <span>Total Attractions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="body-content-2">
+                <div class="container">
+                    <div class="hotel">
+                        <div class="hotel-header">
+                            <h2>Hotels</h2>
+                            <div class="button">
+                                <button>Add Hotel <span class="fas fa-plus-circle"></span></button>
+                                <button>Delete Hotel<span class="fas fa-minus-circle"></span></button>
+                                <button>Read More <span class="fas fa-angle-double-right"></span></button>
+                            </div>
+                        </div>
+
+                        <div class="hotel-body">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td><span class="fas fa-picture-o"></span>Photo</td>
+                                        <td><span class="fas fa-hotel"></span> Hotel Name</td>
+                                        <td><span class="fas fa-envelope-open"></span> Hotel Email</td>
+                                        <td><span class="fas fa-star"></span>Hotel Rating</td>
+                                        <td><span class="fas fa-address-book"></span> Hotel Location</td>
+                                        <td><span class="fas fa-file"></span>Option</td>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td><img src="image/four-seasons.jpg" alt="profile-picture"></td>
+                                        <td>Four-Seasons Hotel</td>
+                                        <td>fourseason@hotmail.com</td>
+                                        <td><span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star-half-alt checked"></span></td>
+                                        <td>Kuala Lumpur</td>
+                                        <td><a href="#"><span class="fas fa-archive"></span>Edit Hotel</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="image/pavillion.jpg" alt="profile-picture"></td>
+                                        <td>Pavilion Hotel</td>
+                                        <td>pavillion@yahoo.com</td>
+                                        <td><span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star-half-alt checked"></span></td>
+                                        <td>Kuala Lumpur</td>
+                                        <td><a href="#"><span class="fas fa-archive"></span>Edit Hotel</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="image/pelangi.jpg" alt="profile-picture"></td>
+                                        <td>Pelangi Beach Resort</td>
+                                        <td>pelangi@hotmail.com</td>
+                                        <td><span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="far fa-star checked"></span></td>
+                                        <td>Pulau Langkawi</td>
+                                        <td><a href="#"><span class="fas fa-archive"></span>Edit Hotel</a></td>
+                                    </tr>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="attraction">
+                        <div class="attraction-header">
+                            <h2>Attraction</h2>
+                            <div class="button">
+                                <button>Add Attraction<span class="fas fa-plus-circle"></span></button>
+                                <button>Delete Attraction<span class="fas fa-minus-circle"></span></button>
+                                <button>Read More <span class="fas fa-angle-double-right"></span></button>
+                            </div>
+                        </div>
+
+                        <div class="attraction-body">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td><span class="fas fa-picture-o"></span> Photo</td>
+                                        <td><span class="fas fa-tree"></span> Attraction Name</td>
+                                        <td><span class="fas fa-address-book"></span> Attraction Location</td>
+                                        <td><span class="fas fa-file"></span> Option</td>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td><img src="image/beach.jpg" alt="profile-picture"></td>
+                                        <td>Port Dickson</td>
+                                        <td>Negeri Sembilan</td>
+                                        <td><a href="#"><span class="fas fa-archive"></span>Edit Attraction</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="image/eastM-cover.jpg" alt="profile-picture"></td>
+                                        <td>Mountain Kinabalu</td>
+                                        <td>Sabah</td>
+                                        <td><a href="#"><span class="fas fa-archive"></span>Edit Attraction</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="image/westM-cover.jpg" alt="profile-picture"></td>
+                                        <td>KLCC</td>
+                                        <td>Kuala Lumpur</td>
+                                        <td><a href="#"><span class="fas fa-archive"></span>Edit Attraction</a></td>
+                                    </tr>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

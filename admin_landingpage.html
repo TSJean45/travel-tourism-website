@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Admin Dashboard</title>
+        <link rel="stylesheet" href=
+        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+        <link rel="icon" href="Nomadic Traveller/Nomadic Traveller (Solid).png" type="image/x-icon">
+        <style>
+              *{
+                margin: 0;
+                padding: 0;   
+            }
+          
+            .top-menu{
+                height: 725px;
+                overflow: hidden;
+                }
+
+            .top-menu .photo-container .background img{
+                position: absolute;
+                top:0; left: 0;
+                z-index: -1;
+                height: 725px;
+                width:100%;
+                object-fit: cover;
+                overflow: hidden;
+            }
+
+            .top-menu .photo-container .landingp-icon img{
+                position: absolute;
+                transform: translate(700px,100px);
+                z-index: -1;
+                height: 600px;
+                width:800px;
+                animation: slidein 2s ease-in-out;
+            }
+
+            @keyframes slidein {
+                0%{
+                    transform: translate(1500px,100px);
+                }
+                100%{
+                    transform: translate(700px,100px);
+                }
+                
+            }
+
+            .dashboard-menu-title{
+                display: flex;
+                height: 729px;
+                color: white;
+                justify-content: left;
+                align-items: center;
+                text-align: center;
+            }
+
+            .dashboard-title .title h3{
+                font-size: 80px;
+                margin-bottom: 20px;
+                margin-left: 50px;
+                border-bottom: rgba(82, 4, 82, 0.425) 6px solid;
+            }
+
+            .dashboard-title .content{
+                width: 600px;
+                margin-left: 50px;
+
+            }
+
+            .dashboard-title .content span{
+                font-size: 30px;
+            }
+
+            .dashboard-btn{
+                height: 100%;
+            }
+
+            .enter-btn button,.back-btn button{
+                border-radius: 20px;
+                padding: 10px 20px 10px 20px;
+                font-size: 30px;
+                font-weight: bold;
+                cursor: pointer;
+                background-color: purple;
+                color: white;
+            }
+
+            .enter-btn button:hover,
+            .back-btn button:hover{
+                background-color: white;
+                color: purple;
+            }
+
+            .enter-btn button{
+                transform: translate(220px,-250px);
+            }
+
+            .back-btn button{
+                transform: translate(10px,-780px);
+            }
+        </style>
+        
+</head>
+    <body>
+    <!-- the header -->
+        <header>
+            <section class="top-menu">
+                <!-- photo -->
+                <div class="photo-container">
+                    <div class="background">
+                        <img src="image/Background.png" alt="background">
+                    </div>
+                    <div class="landingp-icon">
+                        <img src="image/Illustration.png" alt="landing-page-icon">
+                    </div>
+                    
+                </div>
+                <div class="dashboard-menu-title">
+                    <div class="dashboard-title">
+                        <div class="title">
+                            <h3>Admin Dashboard</h3>
+                        </div>
+                        <div class="content">
+                            <span>Organise And Update Nomadic Traveller's Data Here</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-btn">
+                    <div class="enter-btn">
+                        <button onclick="document.location='admindashboard.html'">Enter Dashboard</button>
+
+                    </div>
+                    <div class="back-btn">
+                        <button onclick="document.location='cover.html'"><i class="fas fa-arrow-circle-left"></i> Return To Website</button>
+
+                    </div>
+                </div>
+            </section>
+        </header>
+
+    </body>
+</html>       
+<!-- header end --> 
