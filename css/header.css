@@ -1,0 +1,199 @@
+@font-face{
+    font-family: Yellowtail;
+    src: url(Font/Yellowtail-Regular.woff);
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    font-weight: 550;
+  }
+
+.top-menu{
+  height: 729px;
+}
+
+.top-menu .video-container video{
+  position: absolute;
+  top:0; left: 0;
+  z-index: -1;
+  height: 100%;
+  width:100%;
+  object-fit: cover;
+  opacity: 0.85;
+}
+
+.menu-bar {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  
+}
+
+.logo img
+  {
+    width:300px;
+    height:300px;
+    filter: drop-shadow (#407076 1px 1px 50px);
+  }
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu-bar ul li {
+  padding: 10px 30px;
+  text-align: center; 
+  position: relative;
+}
+
+.menu-bar ul li a {
+  font-size: 20px;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-shadow: 10px 10px 25px #698996;
+}
+
+.menu-bar ul li a:hover {
+  color:yellow;
+  text-shadow: 10px 10px 25px #407076;
+}
+
+.dropdown-menu {
+  display: none;
+  animation: growDown 0.2s ease-in-out both;
+  transform-origin: top center;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+@keyframes growDown {
+  0% {
+      transform: scaleY(0)
+  }
+  80% {
+      transform: scaleY(1.1)
+  }
+  100% {
+      transform: scaleY(1)
+  }
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 20px;
+  top: 100%;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+  width: 300px;
+  padding: 10px;
+  text-align:left;
+}
+.top-menu-title{
+  display: flex;
+  height: 550px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.middle-title h3{
+  font-size: 125px;
+  padding: 10px 0;
+  border-bottom: 6px solid red;
+  color: white;
+  text-transform: uppercase;
+  animation: fadein 2s ease-in-out;
+  font-family: Morish;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
+}
+
+.content span{
+  font-size: 30px;
+  opacity: 0.8;
+  color: white;
+  text-transform: lowercase;
+  animation: fadein-2 2s ease-in-out;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
+}
+/* .top-menu-title h3{
+    text-align: left;
+    text-transform: uppercase;
+    transform: translateY(550px);
+    padding-left: 20px;
+    
+}
+
+.top-menu-title h3 span{
+  font-size: 50px;
+  font-family:"Yellowtail";
+  font-weight: bold;
+  color: white;
+  margin: 15px;
+  text-shadow: 10px 10px 25px #698996;
+  position: relative;
+  display: inline-block;
+  bottom: 10px;
+  animation: animate 1.5s linear infinite;
+} */
+
+h3 span:nth-child(1){
+  animation-delay:0.25s;
+}
+
+h3 span:nth-child(2){
+  animation-delay:0.5s;
+}
+
+h3 span:nth-child(3){
+  animation-delay:0.75s;
+}
+
+h3 span:nth-child(4){
+  animation-delay:1s;
+}
+
+@keyframes animate {
+  0%{
+    transform: translateY(0px);
+  }
+  10%{
+    transform: translateY(-30px);
+  }
+  15%{
+    transform: translateY(0px);
+  }
+  25%{
+    transform: translateY(-20px);
+  }
+  30%{
+    transform: translateY(0px);
+  }
+  40%{
+    transform: translateY(-10px);
+  }
+  45%{
+    transform: translateY(0px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+  
+}
+
+.top-menu-title h3 span:hover {
+  color:yellow;
+  text-shadow: 10px 10px 25px #407076;
+}

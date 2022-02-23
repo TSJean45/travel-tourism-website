@@ -1,0 +1,62 @@
+.newsletter{
+  padding: 150px 40px ;
+  font-family: 'Zen Kaku Gothic Antique';
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  position: relative;
+  opacity: 0.9;
+}
+
+
+.newsletter h1{
+  
+  margin: 40px auto;
+  font-family: 'Zen Kaku Gothic Antique';
+  font-size: 65px;
+  font-weight: 500px;
+}
+
+.newsletter p{
+  max-width: 600px;
+  margin: 40px auto;
+  font-family: 'Zen Kaku Gothic Antique';
+  font-size: 20px;
+  font-weight: 300px;
+}
+
+.email
+{
+  height: 40px;
+  display:flex;
+  justify-content: center;
+}
+
+.email i{
+  background-color: #2f3542;
+  width: 40px;
+  line-height: 40px;
+}
+
+.email-box , .btn{
+  border:none;
+  outline: none;
+}
+
+.email-box{
+  width: 0px;
+  transition: 0.63s;
+}
+
+.email:hover > .email-box, .email-box:focus{
+  width:260px;
+  padding: 0 10px;
+}
+
+.btn{
+  background-color: #2f3542;
+  color: white;
+  padding: 0 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}

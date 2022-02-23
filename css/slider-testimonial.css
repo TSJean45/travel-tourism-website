@@ -1,0 +1,145 @@
+.testimonial{
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slide-title{
+    font-weight: bolder;
+    margin-bottom: 40px;
+}
+
+.slide-title h2{
+    font-size: 35px;
+    color: white;
+    text-shadow: 10px 10px 10px black;
+    text-align: center;
+}
+
+.container{
+    position: relative;
+    perspective: 1000px;
+}
+
+.container .slide-container{
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 5px;
+    position: relative;
+    transform-style: preserve-3d;
+    width: 500px;
+    height: 400px;
+    margin: 10px;
+    animation: slide .6s ease-in-out;
+}
+
+
+
+@keyframes slide {
+    0%{
+        transform: rotateY(-180deg);
+    }
+}
+
+.container .slide-container>*{
+    animation: slide2 .5s linear;
+}
+
+@keyframes slide2 {
+    0%{
+       opacity: 0;
+    }
+}
+
+
+.slide-container .quote{
+    font-size: 50px;
+    opacity: 0.5;
+    position: absolute;
+}
+
+.slide-content{
+    text-align: center;
+}
+
+.slide-content p{
+    text-align: center;
+    font-size: 17px;
+}
+.bot-right{
+    right: 20px;
+    bottom: 20px;
+}
+
+.top-left{
+    left: 20px;
+    top: 20px;
+}
+
+.member img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 20px;
+}
+
+.member-info h3{
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 5px;
+}
+
+.member-info i{
+    font-size: 25px;
+}
+
+.checked{
+    color: yellow;
+}
+
+.test-text{
+    padding: 10px;
+}
+
+.test-text p{
+    font-size: 25px;
+}
+
+.slide-container{
+    display: none;
+}
+
+.active{
+    display: block;
+}
+
+.container #next, .container #previous{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-size: 50px;
+    transform: translateY(-250px);
+    background: white;
+    border-radius: 10px;
+    color: black;
+}
+
+.container #next{
+    right:-130px ;
+}
+
+.container #previous{
+    left:-130px ;
+}
+
+.container #next:hover,
+.container #previous:hover{
+    color: red;
+    background: white;
+}

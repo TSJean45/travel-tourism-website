@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&family=Zen+Kurenaido&display=swap');
+
+
+.footer{
+    background-color: #1b1919;
+    padding: 40px 0;
+}
+
+.footer-container{
+    max-width: 100%;
+    margin: auto;
+}
+
+.footer-container ul{
+    list-style: none;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-logo{
+    margin: 10px;
+    text-align: center;
+    border-right: 2px solid gray;
+}
+
+.footer-logo h4{
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Zen Kurenaido', sans-serif;
+    transform: translateY(100px);
+}
+
+.footer-logo img{
+    width: 300px;
+    height: auto;
+}
+
+.footer-col h4{
+    font-size: 20px;
+    position: relative;
+    font-weight: bold;
+    color: white;
+    
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: red;
+    height: 2px;
+    box-sizing: border-box;
+    width: 200px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: rgb(158, 154, 154);
+    text-decoration: none;
+    font-weight: 400;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.footer-col ul li a:hover:not(.social-link ul li a){
+    border-bottom: 2px red solid;
+    color: white;
+}
+
+.main{
+    margin-right: 200px;
+    margin-left: 50px;
+}
+
+.main h4,.attract h4, .media h4{
+    margin-bottom: 20px;
+}
+
+
+.attract-content{
+    margin-right: 50px;
+}
+
+.media{
+    margin-left: 50px;
+}
+
+.social-link ul li{
+    display: inline-block;
+    margin: 10px;
+}
+
+.social-link ul li a:hover{
+    filter: drop-shadow(0px 0px 10px red);
+}
