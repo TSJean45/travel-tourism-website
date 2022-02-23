@@ -1,4 +1,4 @@
-const txts=document.querySelector(".scrolling-text").children,
+const txts=document.querySelector(".animated-text").children,
 txtsLen=txts.length;
 let i=0;
 const slideInTimer=3000,
